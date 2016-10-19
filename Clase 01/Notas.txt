@@ -1,0 +1,6 @@
+Para iniciar el mongod (shell)
+mongod --storageEngine=mmpav1 --dbpath \data\bd
+
+en otra consola puedo hacer "mongo"
+para insertar en la bd
+db.names.insert({'name','Luis Pérez'});
