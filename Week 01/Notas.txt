@@ -1,0 +1,25 @@
+Para iniciar el mongod (shell)
+mongod --storageEngine=mmpav1 --dbpath \data\bd
+
+en otra consola puedo hacer "mongo"
+para insertar en la bd
+db.names.insert({'name','Luis Pérez'});
+
+-- to switch data bases
+use database_name
+
+-- to search docs inside collections
+db.collection_name.find().pretty()
+db.collection_name.find({ "var" : "value" }).pretty()
+
+
+--
+var a = db.movies.findOne()
+a
+-- imprimiria el contenido de un elemento de la coleccion movies
+
+-- para modificarlo debo
+a.var =  "value"
+
+-- to save the value
+db.movies.save(a)
