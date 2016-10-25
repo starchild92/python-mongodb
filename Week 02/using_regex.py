@@ -13,7 +13,7 @@ def find():
 
     print "find, reporting for duty"
 
-    query = {'title': {'$regex': 'apple|google', '$options': 'i'}}
+    query = {'title': {'$regex': 'microsoft|netflix|google', '$options': 'i'}}
     projection = {'title': 1, '_id': 0}
 
     try:
@@ -22,6 +22,7 @@ def find():
     except Exception as e:
         print "Unexpected error:", type(e), e
 
+    print cursor.count()
     for doc in cursor:
         print doc
 

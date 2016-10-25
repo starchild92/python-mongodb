@@ -9,13 +9,12 @@ connection = pymongo.MongoClient("mongodb://localhost")
 db=connection.school
 scores = db.scores
 
-
 def find():
 
     print "find, reporting for duty"
 
     query = {'type': 'exam'}
-    projection = {'student_id': 1, '_id': 0}
+    projection = {'student_id': 1, '_id': 0, 'type': 1}
 #    projection = {'student_id': 1}
 
     try:

@@ -45,5 +45,5 @@ def find_one():
     print doc
 
 
-if __name__ == '__main__':
-    find()  # Change this to find_one() to run that function, instead.
+if (__name__ == '__main__'):
+    find_one()  # Change this to find_one() to run that function, instead.

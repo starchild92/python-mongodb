@@ -15,7 +15,7 @@ stories = db.stories
 stories.drop()
 
 # get the reddit home page
-reddit_page = urllib2.urlopen("http://www.reddit.com/r/technology/.json")
+reddit_page = urllib2.urlopen("https://www.reddit.com/r/technology.json")
 
 # parse the json into python objects
 parsed = json.loads(reddit_page.read())

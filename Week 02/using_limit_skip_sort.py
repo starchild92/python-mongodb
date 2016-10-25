@@ -16,8 +16,8 @@ def find():
     query = {}
     try:
         cursor = scores.find(query).skip(4)
-        cursor.limit(1)
-#        cursor.sort('student_id', pymongo.ASCENDING).skip(4).limit(1)
+        # cursor.limit(1)
+        cursor.sort('student_id', pymongo.ASCENDING).skip(4).limit(1)
         cursor.sort([('student_id', pymongo.ASCENDING),
                      ('score', pymongo.DESCENDING)])
 
