@@ -19,7 +19,7 @@ def insert_many():
                "interests": ['horses', 'skydiving', 'fencing']}
     people_to_insert = [andrew, richard]
     try:
-        people.insert_many(people_to_insert, ordered=False)
+        people.insert_many(people_to_insert, ordered=True)
     except Exception as e:
         print "Unexpected error:", type(e), e
 
